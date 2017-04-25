@@ -7,6 +7,7 @@ import java.time.LocalDate;
  * Simular entidad recuperada de la BBDD
  */
 public class Oferta implements Serializable {
+	
 	private static final long serialVersionUID = 1L;
 	
 	private int codigoOferta;
@@ -33,6 +34,13 @@ public class Oferta implements Serializable {
 	}
 	public void setFecahaInicio(LocalDate fecahaInicio) {
 		this.fecahaInicio = fecahaInicio;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Oferta [codigoOferta=" + codigoOferta + ", referencia=" + referencia + ", fecahaInicio=" + fecahaInicio
+				+ "]";
 	}
 	
 	
